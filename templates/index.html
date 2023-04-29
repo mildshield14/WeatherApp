@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Alert</title>
+    <style>
+      /* General styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #444444;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Header styles */
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 32px;
+        letter-spacing: 2px;
+      }
+
+      /* Form styles */
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: #2c3e50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #1d2d3e;
+      }
+
+      /* Footer styles */
+      .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+        color: #cccccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Weather Alert</h1>
+    </header>
+    <br><br><br>
+    <form method="post" action="/">
+      <label for="city">Enter your city:</label>
+      <input type="text" name="city" id="city" required>
+      <br>
+      <label for="email">Enter recipient email address:</label>
+      <input type="email" name="email" id="email" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <footer class="footer">
+      Made by <a href="https://mildshield14.github.io/src/index.html">Vennila Sooben</a>
+    </footer>
+  </body>
+</html>

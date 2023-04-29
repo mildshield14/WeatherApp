@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Alert</title>
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .card h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        text-align: center;
+        color: #2c3e50;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .card p {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #333;
+        line-height: 1.5;
+      }
+
+      .card button {
+        padding: 10px 20px;
+        background-color: #2c3e50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .card button:hover {
+        background-color: #0062cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Weather Alert</h1>
+        <p>Weather information for {{ city }} has been sent to {{ email }}.</p>
+        <button onclick="window.location.href = '/';">Resubmit</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+
