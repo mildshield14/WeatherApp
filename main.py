@@ -41,4 +41,6 @@ def success():
 
 
 if __name__ == '__main__':
+    app.add_url_rule('/<path:path>', endpoint='catch_all', view_func=submit)
     app.run(port=5002)
+
