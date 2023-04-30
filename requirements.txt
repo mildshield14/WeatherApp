@@ -1,2 +1,3 @@
 flask
 requests
+google-auth==2.3.0
