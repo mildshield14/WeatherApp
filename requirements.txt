@@ -2,3 +2,4 @@ flask
 requests
 google-auth==2.3.0
 spacy==3.3.0
+en-core-web-sm
