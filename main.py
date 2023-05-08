@@ -3,7 +3,8 @@ from flask import Flask, render_template, request, redirect
 from EmailSending import EmailSending
 from Weather import Weather
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='WeatherApp/templates')
+
 
 
 def TODO(message="Functionality not implemented"):
@@ -40,4 +41,6 @@ def success():
 
 
 if __name__ == '__main__':
+    app.add_url_rule('/<path:path>', endpoint='catch_all', view_func=submit)
     app.run(port=5002)
+
